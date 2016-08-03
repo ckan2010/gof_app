@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="120dp"
+        android:hint="이메일 주소"
+        android:id="@+id/et_email"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:hint="비밀번호"
+        android:id="@+id/et_pw"
+        />
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="220dp"
+        android:gravity="center"
+        android:background="#f50529"
+        android:id="@+id/bt_login"
+        android:text=" 로그인 "
+        android:textColor="#ffffff"
+        />
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="-25dp"
+        android:textSize="15dp"
+        android:hint="비밀번호를 잊으셨나요?"
+        android:id="@+id/tv_msg"
+        />
+</LinearLayout>
