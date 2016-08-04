@@ -13,16 +13,14 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/videoView"
+        android:id="@+id/vv_video"
         />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
+        android:id="@+id/bt_play"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:background="@android:color/transparent"
         />
-
-
 </RelativeLayout>

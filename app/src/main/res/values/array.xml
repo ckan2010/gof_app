@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu">
+        <item>GoF 인기동영상</item>
+        <item>신규 동영상</item>
+        <item>내 동영상 목록</item>
+        <item>계정</item>
+        <item>GoF 로그아웃</item>
+    </string-array>
+</resources>

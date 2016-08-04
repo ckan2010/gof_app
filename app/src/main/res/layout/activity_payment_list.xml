@@ -5,11 +5,44 @@
     android:orientation="vertical"
     android:weightSum="10"
     >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
 
+        <Spinner
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinner"
+            android:layout_marginLeft="10dp"
+            android:entries="@array/menu"
+            />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="GoF"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#f50529"
+            android:textSize="30dp"
+            />
+
+        <SearchView
+            android:layout_width="25dp"
+            android:layout_height="28dp"
+            android:id="@+id/searchView"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="200dp"
+            />
+    </LinearLayout>
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="9"
+        android:layout_weight="8"
         android:id="@+id/lv_paymentlist" />
     <Button
         android:layout_width="match_parent"

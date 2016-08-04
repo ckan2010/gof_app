@@ -3,19 +3,55 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:weightSum="1">
+    android:weightSum="4">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.7"
+        >
+        <Spinner
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/sp_menu"
+            android:layout_marginLeft="10dp"
+            android:entries="@array/menu"
+            />
 
+        <TextView
+            android:id="@+id/tv_gof"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="GoF"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#f50529"
+            android:textSize="30dp"
+            />
+
+        <SearchView
+            android:id="@+id/sv_find"
+            android:layout_width="25dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="200dp"
+            />
+    </LinearLayout>
     <ImageView
+        android:id="@+id/iv_my_poster"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:background="@drawable/matrix1"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:orientation="vertical"
-        android:weightSum="1"
+        android:layout_weight="2"
         android:layout_marginTop="10dp">
         <TextView
             android:id="@+id/tv_video_name"
@@ -32,27 +68,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="1"
             android:layout_marginTop="10dp">
             <TextView
+                android:id="@+id/tv_stargrade"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:text="★★★★★"
                 android:layout_marginLeft="10dp"
                 />
             <TextView
+                android:id="@+id/tv_openyear"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:text="1999"
                 android:layout_marginLeft="1dp"
                 />
             <TextView
+                android:id="@+id/tv_grade"
                 android:layout_width="30dp"
                 android:layout_height="wrap_content"
                 android:text="[12]"
                 android:layout_marginLeft="1dp"
                 />
             <TextView
+                android:id="@+id/tv_runningtime"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:text="2시간 16분"
@@ -63,9 +102,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="1"
             android:layout_marginTop="10dp">
             <TextView
+                android:id="@+id/tv_synop"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="한 컴퓨터 해커가 사람들 대부분이 현실로 여기는 세상이 사실은 기계가 만든 시뮬레이션임을 깨달으면서 자유를 위 한 반란에 가담한다."
@@ -76,7 +115,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="1"
             android:layout_marginTop="10dp">
             <TextView
                 android:layout_width="40dp"
@@ -85,6 +123,7 @@
                 android:layout_marginLeft="10dp"
                 />
             <TextView
+                android:id="@+id/tv_ledingactor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="키아누리브스, 로렌스 피시번, 캐리앤 모스"
@@ -94,7 +133,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="1"
             android:layout_marginTop="10dp">
             <TextView
                 android:layout_width="40dp"
@@ -103,6 +141,7 @@
                 android:layout_marginLeft="10dp"
                 />
             <TextView
+                android:id="@+id/tv_category"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="액션 모험, 무술 영화, SF 판타지"
@@ -112,7 +151,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="1"
             android:layout_marginTop="10dp">
             <TextView
                 android:layout_width="70dp"
@@ -121,6 +159,7 @@
                 android:layout_marginLeft="10dp"
                 />
             <TextView
+                android:id="@+id/tv_carecter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="흥미진지, 폭력, 암울한, 환각성, 공상"
@@ -130,7 +169,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="1"
             android:layout_marginTop="10dp">
             <TextView
                 android:layout_width="70dp"
@@ -139,6 +177,7 @@
                 android:layout_marginLeft="10dp"
                 />
             <TextView
+                android:id="@+id/tv_awarded"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="키아누 리브스와 로렌스 피시번 주연의 획기적인 사이버 스릴러 영화 는 아카데미 4개 부문을 수상했다."
@@ -146,8 +185,10 @@
         </LinearLayout>
     </LinearLayout>
     <Button
+        android:id="@+id/bt_myvideolist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="내 동영상 목록"
+        android:layout_weight="0.2"
         />
 </LinearLayout>

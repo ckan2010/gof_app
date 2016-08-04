@@ -11,7 +11,6 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -21,10 +20,12 @@
         <activity android:name=".MyVideoActivity" />
         <activity android:name=".PopVideoActivity" />
         <activity android:name=".NewVideoActivity" />
-        <activity android:name=".FindVideoActivity" />
         <activity android:name=".AccountActivity" />
         <activity android:name=".MemberUpdateActivity" />
-        <activity android:name=".PaymentList"></activity>
+        <activity android:name=".PaymentList" />
+        <activity android:name=".FindVideoActivity">
+
+        </activity>
     </application>
 
 </manifest>

@@ -2,11 +2,39 @@
 <LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:layout_height="60dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="4">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.5"
+        >
+        <Spinner
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/sp_menu"
+            android:layout_marginLeft="10dp"
+            android:entries="@array/menu"
+            />
+
+        <TextView
+            android:id="@+id/tv_gof"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="GoF"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#f50529"
+            android:textSize="30dp"
+            />
+    </LinearLayout>
+    <LinearLayout android:layout_height="0dp"
         android:layout_width="match_parent"
         android:orientation="horizontal"
         xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_weight="0.5"
         >
         <Button
             android:id="@+id/bt_find"
@@ -24,11 +52,11 @@
             android:text="매트릭스"
             />
     </LinearLayout>
-    <LinearLayout android:layout_height="60dp"
+    <LinearLayout android:layout_height="0dp"
         android:layout_width="match_parent"
         android:orientation="horizontal"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:weightSum="1">
+        android:layout_weight="0.5">
         <ImageView
             android:id="@+id/iv_poster"
             android:layout_width="50dp"
@@ -41,16 +69,17 @@
             android:layout_height="33dp"
             android:layout_below="@id/iv_poster"
             android:text="매트릭스,매트릭스2,매트릭스3"
-            android:textAlignment="viewStart"
             android:textIsSelectable="false"
-            android:layout_gravity="bottom"
-            android:layout_weight="0.31" />
+            android:layout_gravity="center"
+            android:layout_weight="0.31"
+            android:id="@+id/tv_poster"/>
     </LinearLayout>
-    <LinearLayout android:layout_height="60dp"
+    <LinearLayout android:layout_height="0dp"
         android:layout_width="match_parent"
         android:orientation="horizontal"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:weightSum="1">
+        android:layout_weight="0.5"
+        >
         <ImageView
             android:id="@+id/iv_poster1"
             android:layout_width="80dp"
@@ -72,11 +101,6 @@
             android:layout_marginLeft="5dp"
             android:src="@drawable/matrix3"
             />
-        <ImageView
-            android:id="@+id/iv_poster4"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="5dp"
-            />
+
     </LinearLayout>
 </LinearLayout>

@@ -2,7 +2,41 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:weightSum="3">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.3"
+        >
+        <Spinner
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/sp_menu"
+            android:layout_marginLeft="10dp"
+            android:entries="@array/menu"
+            />
+
+        <TextView
+            android:id="@+id/tv_gof"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="GoF"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#f50529"
+            android:textSize="30dp"
+            />
+
+        <SearchView
+            android:layout_width="25dp"
+            android:layout_height="28dp"
+            android:id="@+id/sv_find"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="200dp"
+            />
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,31 +57,31 @@
         <ImageView
             android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:id="@+id/imageView"
+            android:id="@+id/iv_pop_poster"
             android:src="@drawable/brakingbad" />
 
         <ImageView
             android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:id="@+id/imageView2"
+            android:id="@+id/iv_pop_poster1"
             android:src="@drawable/dexter" />
 
         <ImageView
             android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:id="@+id/imageView3"
+            android:id="@+id/iv_pop_poster2"
             android:src="@drawable/hungu" />
 
         <ImageView
             android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:id="@+id/imageView4"
+            android:id="@+id/iv_pop_poster3"
             android:src="@drawable/houseof" />
 
         <ImageView
             android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:id="@+id/imageView5"
+            android:id="@+id/iv_pop_poster4"
             android:src="@drawable/kimyhan" />
     </TableRow>
 </LinearLayout>
