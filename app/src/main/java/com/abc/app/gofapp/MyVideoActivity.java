@@ -35,7 +35,7 @@ public class MyVideoActivity extends Activity implements View.OnClickListener{
         iv_my_poster2.setOnClickListener(this);
         iv_my_poster3.setOnClickListener(this);
         iv_my_poster4.setOnClickListener(this);
-        /*
+        /* aaaaaa
         sp_menu.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view,
