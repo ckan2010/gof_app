@@ -33,7 +33,6 @@ public class VideoPlay extends Activity implements View.OnClickListener{
                 mediaController.setAnchorView(vv_video);
                 vv_video.setMediaController(mediaController);
                 vv_video.start();
-                /*aa*/
                 break;
         }
     }
